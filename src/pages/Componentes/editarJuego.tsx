@@ -102,7 +102,7 @@ export const editarJuego = () => {
                     />
                 </Form.Group>
                 {error && <Alert variant="danger">{error}</Alert>}
-                <Button type='button' variant='success' onClick={modificar}>Registrar</Button>
+                <Button type='button' variant='success' onClick={modificar}>Modificar</Button>
                 <Link href={'/Componentes/Menu'}><Button variant='success'>Volver a Menu</Button></Link>
 
             </Form>
