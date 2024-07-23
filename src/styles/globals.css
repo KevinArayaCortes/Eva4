@@ -4,22 +4,34 @@
     --background-start-rgb: 0, 219, 62;
     --background-end-rgb: 255, 255, 255;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
       to bottom,
       rgb(var(--background-start-rgb)) 20%, /* Ajusta este valor para cambiar la posición inicial */
       rgb(var(--background-end-rgb)) 100%
     );
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-}
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
 
-@media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+
+  /* Estilos específicos para los modales */
+  .modal-content {
+    background-color: #fff; /* Fondo blanco para los modales */
+    color: #000; /* Texto negro para los modales */
+  }
+
+  .modal-header, .modal-footer {
+    border-color: #dee2e6; /* Color de borde para el header y footer del modal */
+  }
+
+  .modal-header .close {
+    color: #000; /* Color del botón de cerrar */
   }
 }

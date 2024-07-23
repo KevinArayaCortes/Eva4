@@ -6,7 +6,7 @@ import { Button, Table, Modal } from 'react-bootstrap';
 import { RiEdit2Fill } from "react-icons/ri";
 import { MdOutlineFolderDelete } from "react-icons/md";
 
-export const Ver = () => {
+export const VerJuegos = () => {
     const [juegos, setJuegos] = useState<Juego[]>([]);
     const [showModal, setShowModal] = useState(false);
     const [juegoBorrar, setJuego] = useState<Juego | null>(null);
@@ -99,4 +99,4 @@ export const Ver = () => {
     );
 };
 
-export default Ver;
+export default VerJuegos;

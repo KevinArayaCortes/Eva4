@@ -6,7 +6,7 @@ import { Button, Table, Modal } from 'react-bootstrap';
 import { LiaUserEditSolid } from "react-icons/lia";
 import { TiUserDeleteOutline } from "react-icons/ti";
 
-export const Ver = () => {
+export const VerUsuarios = () => {
     const [usuarios, setUsuarios] = useState<Usuario[]>([]);
     const [showModal, setShowModal] = useState(false);
     const [usuarioBorrar, setUsuario] = useState<Usuario | null>(null);
@@ -91,4 +91,4 @@ export const Ver = () => {
     );
 };
 
-export default Ver;
+export default VerUsuarios;
